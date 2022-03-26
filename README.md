@@ -1,3 +1,3 @@
 # Petshop
 
-Maquetado de una Landing Page stática.
+Maquetado de una Landing Page estática.
