@@ -12,8 +12,16 @@
         <div class="topHeader">
             <p>Grandes ofertas en comederos</p>
             <div>
-                <span>Español</span>
-                <span>ARS$</span>
+                <form action="">
+                    <select name="idioma" >
+                        <option value="Español">Español</option>
+                        <option value="English">English</option>
+                    </select>
+                    <select name="moneda" >
+                        <option value="Español">Español</option>
+                        <option value="Español">Español</option>
+                    </select>
+                </form>
             </div>
         </div>
         <div class="navHeader">
@@ -70,9 +78,9 @@
         <section class="form">
             <h2>Contactanos</h2>
             <form>
-                <input class="inputText" type="text" id="fname" placeholder="Nombre y Apellido">
-                <input class="inputText" type="text" id="fmail" placeholder="Ingresá tu correo electrónico">
-                <input class="inputText" type="text" id="fphone" placeholder="Teléfono">
+                <input class="inputText" type="text" id="fname" placeholder="Nombre y Apellido" required>
+                <input class="inputText" type="mail" id="fmail" placeholder="Ingresá tu correo electrónico" required>
+                <input class="inputText" type="number" id="fphone" placeholder="Teléfono" required>
                 <div>
                     <input class="ctaReset" type="submit" value="Restear">
                     <input class="ctaSubmit" type="reset" value="Enviar">
@@ -93,9 +101,35 @@
     </main>
 
     <footer>
-        <div class="footerLinks">
-            
-        </div>
+        <section class="footerLinks">
+            <div>
+                <div class="linksItems">
+                    <img src="img/Icono_mapa.png" alt="">
+                    <div>
+                        <h4>Localidad</h4>
+                        <p>Calle - provincia</p>
+                    </div>
+                </div>
+                <div class="linksItems">
+                    <img src="img/Icono_Phone.png" alt="">
+                    <div>
+                        <h4>Teléfono</h4>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="linksItems">
+                    <img src="img/Icono_mail.png" alt="">
+                    <div>
+                        <h4>Correo Electrónico</h4>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div>
+            <img src="img/logo_inverso.svg" alt="">
+        </section>
+        <section class="footerBottom">
+            <p>Todos los derechos reservados Front End</p>
+        </section>
     </footer>
 
 </body>
